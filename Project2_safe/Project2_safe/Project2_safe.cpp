@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Function to get number of accidents for a region
+
 int getAccidents(string regionName) {
     int accidents;
     do {
@@ -19,7 +19,7 @@ int getAccidents(string regionName) {
     return accidents;
 }
 
-// Function to determine and display the region with the lowest number of accidents
+
 void findLowest(int north, int south, int east, int west, int central) {
     int lowest = north;
     string region = "North";
