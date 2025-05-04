@@ -14,7 +14,7 @@ double getJudgeScore(int judgeNumber) {
     return score;
 }
 
-s
+
 double findLowest(double s1, double s2, double s3, double s4, double s5) {
     double lowest = s1;
     if (s2 < lowest) lowest = s2;
