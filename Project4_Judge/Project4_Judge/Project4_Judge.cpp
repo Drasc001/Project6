@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Get a judge's score (with input validation)
+
 double getJudgeScore(int judgeNumber) {
     double score;
     do {
@@ -14,7 +14,7 @@ double getJudgeScore(int judgeNumber) {
     return score;
 }
 
-// Find the lowest of 5 scores
+s
 double findLowest(double s1, double s2, double s3, double s4, double s5) {
     double lowest = s1;
     if (s2 < lowest) lowest = s2;
@@ -24,7 +24,7 @@ double findLowest(double s1, double s2, double s3, double s4, double s5) {
     return lowest;
 }
 
-// Find the highest of 5 scores
+
 double findHighest(double s1, double s2, double s3, double s4, double s5) {
     double highest = s1;
     if (s2 > highest) highest = s2;
@@ -34,7 +34,7 @@ double findHighest(double s1, double s2, double s3, double s4, double s5) {
     return highest;
 }
 
-// Calculate average after dropping highest and lowest
+
 double calcAverage(double s1, double s2, double s3, double s4, double s5) {
     double lowest = findLowest(s1, s2, s3, s4, s5);
     double highest = findHighest(s1, s2, s3, s4, s5);
