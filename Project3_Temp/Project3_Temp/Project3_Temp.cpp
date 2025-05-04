@@ -2,12 +2,12 @@
 #include <iomanip>
 using namespace std;
 
-// Function to convert Fahrenheit to Celsius
+
 double celsius(int fahrenheit) {
     return (5.0 / 9.0) * (fahrenheit - 32);
 }
 
-// Function to display the Celsius table
+
 void showCelsiusTable() {
     cout << "Fahrenheit\tCelsius\n";
     cout << "------------------------\n";
