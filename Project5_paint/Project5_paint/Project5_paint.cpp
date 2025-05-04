@@ -8,7 +8,7 @@ int main() {
     double square_feet;
     double total_gallons = 0, total_hours = 0, total_paint_cost = 0, total_labor_charges = 0;
 
-    // Input validation for number of rooms
+    
     cout << "Enter number of rooms: ";
     cin >> number_of_rooms;
     if (number_of_rooms < 1) {
@@ -16,7 +16,7 @@ int main() {
         return 0;
     }
 
-    // Input validation for price of paint
+    
     cout << "Enter price of paint per gallon: $";
     cin >> price_per_gallon;
     if (price_per_gallon < 10.00) {
@@ -24,9 +24,9 @@ int main() {
         return 0;
     }
 
-    // Loop through each room
+    
     for (int i = 1; i <= number_of_rooms; i++) {
-        // Input validation for square footage
+        
         cout << "Enter square footage for room " << i << ": ";
         cin >> square_feet;
         if (square_feet < 0) {
@@ -34,23 +34,23 @@ int main() {
             return 0;
         }
 
-        // Calculations
+        
         double gallons_of_paint = square_feet / 110;
         double labor_hours = gallons_of_paint * 8;
         double cost_of_paint = gallons_of_paint * price_per_gallon;
         double labor_charges = labor_hours * 25;
 
-        // Accumulate totals
+        
         total_gallons += gallons_of_paint;
         total_hours += labor_hours;
         total_paint_cost += cost_of_paint;
         total_labor_charges += labor_charges;
     }
 
-    // Calculate total cost
+    
     double total_cost = total_paint_cost + total_labor_charges;
 
-    // Display results
+    
     cout << "\nTotal gallons of paint required: " << total_gallons << endl;
     cout << "Total hours of labor required: " << total_hours << endl;
     cout << "Total cost of paint: $" << total_paint_cost << endl;
